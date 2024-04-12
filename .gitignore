@@ -91,7 +91,8 @@ compile_commands.json
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -122,7 +123,3 @@ Temporary Items
 
 # Local History for Visual Studio Code
 .history/
-
-# Built Visual Studio Code Extensions
-*.vsix
-

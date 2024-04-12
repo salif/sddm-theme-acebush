@@ -1,0 +1,17 @@
+[SddmGreeterTheme]
+Name=Acebush
+Description=A theme for SDDM named in honor of Aaron Bushnell
+Author=Salif Mehmed
+Copyright=(c) 2024, Salif Mehmed
+License=CC-BY-SA
+Type=sddm-theme
+Version=0.1
+Website=https://codeberg.org/salif/sddm-theme-acebush
+Screenshot=media/screenshot.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=mail@salif.eu
+Theme-Id=acebush
+Theme-API=2.0
+QtVersion=6
