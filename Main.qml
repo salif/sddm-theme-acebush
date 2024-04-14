@@ -94,17 +94,18 @@ Rectangle {
             anchors.top: parent.top; anchors.right: parent.right
 
             color: "white"
-            timeFont.family: "Oxygen"
+            // timeFont.family: "Oxygen"
         }
 
-        Image {
+        Rectangle {
             id: rectangle
             anchors.centerIn: parent
-            anchors.verticalCenterOffset: -100
+            anchors.verticalCenterOffset: -120
             width: Math.max(320, mainColumn.implicitWidth + 50)
             height: Math.max(320, mainColumn.implicitHeight + 50)
 
-            source: Qt.resolvedUrl("media/rectangle.png")
+            color: "#60FFFFFF"
+            border.color: "black"
 
             Column {
                 id: mainColumn
@@ -262,6 +263,8 @@ Rectangle {
                         text: textConstants.login
                         width: parent.btnWidth
 
+                        // color: "black"
+
                         onClicked: sddm.login(name.text, password.text, sessionIndex)
 
                         KeyNavigation.backtab: layoutBox; KeyNavigation.tab: shutdownButton
@@ -272,6 +275,8 @@ Rectangle {
                         text: textConstants.shutdown
                         width: parent.btnWidth
 
+                        // color: "black"
+
                         onClicked: sddm.powerOff()
 
                         KeyNavigation.backtab: loginButton; KeyNavigation.tab: rebootButton
@@ -281,6 +286,8 @@ Rectangle {
                         id: rebootButton
                         text: textConstants.reboot
                         width: parent.btnWidth
+
+                        // color: "black"
 
                         onClicked: sddm.reboot()
 
